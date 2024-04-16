@@ -1,8 +1,30 @@
+# Cuda Image Histogram Equalization
+
+Cuda code to perform global histogram equalization. This repository also have python bindings for the same to be used in python scripts.
+
+# Results
+
+## Original Image
+
+![Original Image](kodim08_grayscale.png)
+
+## Histogram Equalized Image
+
+![Histogram Equalized](equalized_image_gpu.png)
+
+# Performance
+
+Image Size: 800x600
+
+| Device | Runtime |
+--- | --- | 
+| CUDA (3090ti) | 0.207808 ms |
+|CPU     (i9) | 1.18752 ms (OpenCV Code) |
+
 # Requirements
 
 - install Opencv
 - pip install pybind11
-
 
 # Code Structure
 
